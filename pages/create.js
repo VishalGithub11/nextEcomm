@@ -1,7 +1,7 @@
 import { parseCookies } from 'nookies';
 import {useState} from 'react'
 import baseUrl from '../helpers/baseUrl'
-import { FadeLoader } from 'react-spinners';
+import  FadeLoader  from 'react-spinners/FadeLoader';
 
 const override = {
   display: "block",
