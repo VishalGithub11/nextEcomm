@@ -2,7 +2,7 @@ import { parseCookies } from 'nookies';
 import {useState} from 'react'
 import baseUrl from '../helpers/baseUrl'
 import  FadeLoader  from 'react-spinners/FadeLoader';
-
+import {useRouter} from "next/router"
 const override = {
   display: "block",
   margin: "0 auto",
@@ -16,6 +16,7 @@ const Create = () => {
   const [media, setMedia] = useState("")
   const [description, setDescription] = useState("")
   const [loading, setLoading] = useState(false);
+  const router = useRouter()
 
  
 
@@ -43,6 +44,7 @@ const Create = () => {
     }else{
       setLoading(false)
       M.toast({html: "Product saved",classes:"green"})
+      router.redirect("/")
     }
     }catch(err){
       setLoading(false)
