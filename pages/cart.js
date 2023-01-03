@@ -110,7 +110,7 @@ const CartItems = ()=>{
 const TotalPrice = ()=>{
     return(
         <div className="container" style={{display:"flex",justifyContent:"space-between"}}>
-            <h5>total ₹ {price}</h5>
+            <h5>Total ₹ {price}</h5>
             {products.length != 0
             && 
             <button className="btn" onClick={()=>handleCheckout2()}>Checkout</button>
@@ -120,6 +120,17 @@ const TotalPrice = ()=>{
     )
 }
 
+
+if(cProducts?.length == 0){
+    return (
+        <div className="container" >
+            <h4>You haven't added anything in your cart</h4>
+            <button className="btn waves-effect waves-light #ee6e73 pink accent-3 " onClick={()=>router.push("/")} > Add items 
+            <i className="material-icons right">add</i>
+          </button>
+        </div>
+    )
+}
 
 
 
