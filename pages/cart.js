@@ -12,8 +12,9 @@ const Cart = ({error, products}) => {
     const router = useRouter()
     const [cProducts,setCartProduct] = useState(products)
     const dispatch = useDispatch()
+    console.log("user", user);
 
-    let email = JSON.parse(user).email
+    let email = user ?  JSON.parse(user).email : ""
     let price = 0
 
     if(!token){
