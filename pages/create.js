@@ -44,7 +44,7 @@ const Create = () => {
     }else{
       setLoading(false)
       M.toast({html: "Product saved",classes:"green"})
-      router.redirect("/")
+      router.push("/")
     }
     }catch(err){
       setLoading(false)
