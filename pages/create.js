@@ -103,7 +103,7 @@ const Create = () => {
          value={description} 
          onChange={(e)=>{setDescription(e.target.value)}}
          className="materialize-textarea" ></textarea>
-          <button className="btn waves-effect waves-light #1565c0 blue darken-3" type="submit">Submit
+          <button className="btn waves-effect waves-light #1565c0 blue darken-3 fullTextButton" type="submit"> {loading ? "Submitting Wait..." : "Submit" }
             <i className="material-icons right">send</i>
           </button>
      </form>
