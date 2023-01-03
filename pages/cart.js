@@ -124,7 +124,7 @@ const TotalPrice = ()=>{
 if(cProducts?.length == 0){
     return (
         <div className="container" >
-            <h4>You haven't added anything in your cart</h4>
+            <h4>You haven&apos;t added anything in your cart</h4>
             <button className="btn waves-effect waves-light #ee6e73 pink accent-3 " onClick={()=>router.push("/")} > Add items 
             <i className="material-icons right">add</i>
           </button>
