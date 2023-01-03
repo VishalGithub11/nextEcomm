@@ -1,14 +1,14 @@
 import { parseCookies } from 'nookies';
 import {useState} from 'react'
 import baseUrl from '../helpers/baseUrl'
-import  FadeLoader  from 'react-spinners/FadeLoader';
+// import  FadeLoader  from 'react-spinners/FadeLoader';
 
-const override = {
-  display: "block",
-  margin: "0 auto",
-  borderColor: "red",
-  top:"150px"
-};
+// const override = {
+//   display: "block",
+//   margin: "0 auto",
+//   borderColor: "red",
+//   top:"150px"
+// };
 
 const Create = () => {
   const [name, setName] = useState("");
@@ -69,10 +69,10 @@ const Create = () => {
 
   return (
     <div className="container" >
-      <FadeLoader
+      {/* <FadeLoader
       color="red"
         loading={loading}
-        cssOverride={override} />
+        cssOverride={override} /> */}
     
     <form onSubmit={(e)=>handleSubmit(e)}>
          <input type="text" name="name" placeholder="Name" 
